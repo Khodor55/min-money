@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Readex+Pro:wght@160..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Condensed+One&display=swap");
+:root {
+  --main-color: #b71212;
+  --main-hover-color: #a53939;
+  --gray-color: #47454559;
+  --attention-color: #ff4400;
+  --text-color: #1e1b1b;
+  --box-shadow: 2px 2px 5px rgb(162, 158, 158);
+  --primary-color: #06062f;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+body {
+  font-family: "Readex Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "HEXP" 0;
+  background-color: rgb(236, 234, 234);
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  padding: 10px;
+  z-index: 2;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .logo {
+  width: 100px;
+}
+header .container .nav {
+  display: flex;
+  gap: 20px;
+}
+header .container .nav span {
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20px;
+}
+header .container .nav span:hover {
+  background-color: var(--main-hover-color);
+}
+header .container .nav span span{
+    display: none;
+}
+main {
+  margin-top: 200px;
+}
+.min_card {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.min_card .card {
+  color: white;
+  background-color: var(--main-color);
+  height: 300px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: var(--box-shadow);
+}
+.min_card .card .tilte {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  padding: 3px 9px;
+  color: var(--gray-color);
+}
+.min_card .card h1 span {
+  color: var(--gray-color);
+}
+.min_card .card h1 p {
+  font-size: 16px;
+  color: var(--gray-color);
+}
+.viza {
+  font-size: 42px;
+  position: absolute;
+  bottom: 10px;
+}
+.min_card .card button {
+  background-color: white;
+  border: 0;
+  outline: 0;
+  padding: 10px 20px;
+  color: var(--main-color);
+  font-size: 17px;
+  margin-top: 20px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: bold;
+}
+.min_card .content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.min_card .content .info {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.959);
+  height: 140px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+.min_card .content .info .logo i {
+  font-size: 33px;
+}
+.min_card .content .info span {
+  color: var(--gray-color);
+}
+.min_card .content .info span p {
+  color: var(--text-color);
+}
+.trading {
+  width: 100%;
+  background: url(../img/4.webp);
+  margin-top: 100px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.trading h1 {
+  text-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+}
+.trading h1 img {
+  font-size: 22px;
+  color: var(--main-color);
+  width: 80px;
+}
+.trading a {
+  background-color: var(--main-color);
+  padding: 10px;
+  color: white;
+  backdrop-filter: blur(30px);
+
+  width: 140px;
+  text-align: center;
+  height: 45px;
+  border-radius: 30px;
+  box-shadow: var(--box-shadow);
+}
+.apps {
+  margin-top: 20px;
+}
+.apps .title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.apps .title h1 {
+  text-transform: capitalize;
+  color: var(--gray-color);
+}
+.apps .search {
+  margin-top: 10px;
+  position: sticky;
+  top: 130px;
+}
+.apps .search form {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px 0;
+  height: 40px;
+  border: 1px solid var(--gray-color);
+}
+.apps .search form input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 100%;
+  padding: 10px;
+  font-size: 19px;
+}
+.apps .search form button {
+  background-color: var(--main-color);
+  outline: 0;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.apps .conttainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.apps .conttainer .card {
+  width: 150px;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.apps .conttainer .card h4 {
+  color: var(--gray-color);
+  margin-top: 20px;
+}
+.apps .conttainer .card .logo {
+  width: 100%;
+  height: 90px;
+}
+@media (max-width: 1300px) {
+  .min_card {
+    flex-direction: column;
+  }
+  .min_card .card {
+    width: 100%;
+  }
+  .min_card .content .info {
+    font-size: 12px;
+    height: 100px;
+    width: 100px;
+  }
+  header .container .nav span span{
+    display: none;
+}
+  header .container .nav span{
+    width: 50px;
+    text-align: center;
+  }
+}
