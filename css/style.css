@@ -347,3 +347,16 @@ gap: 10px;
     display: none;
 }
 }
+@media (max-width : 500px) {
+  .apps .conttainer .card{
+    width: 120px;
+
+  }
+  .apps .conttainer .card .logo {
+  width: 100%;
+  height: 70px;
+}
+  .apps .conttainer .card h4{
+    font-size: 14px;
+  }
+}
