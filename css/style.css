@@ -66,9 +66,7 @@ header .container .nav span {
 header .container .nav span:hover {
   background-color: var(--main-hover-color);
 }
-header .container .nav span span{
-    display: none;
-}
+
 main {
   margin-top: 200px;
 }
@@ -183,7 +181,7 @@ main {
   box-shadow: var(--box-shadow);
 }
 .apps {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 .apps .title {
   display: flex;
@@ -207,7 +205,8 @@ main {
   overflow: hidden;
   margin: 20px 0;
   height: 40px;
-  border: 1px solid var(--gray-color);
+    box-shadow: 20px 20px 60px #bebebe,
+               -20px -20px 60px #ffffff;
 }
 .apps .search form input {
   width: 100%;
@@ -237,11 +236,17 @@ main {
   justify-content: center;
 }
 .apps .conttainer .card {
+   box-shadow: 20px 20px 60px #bebebe,
+               -20px -20px 60px #ffffff;
   width: 150px;
   text-align: center;
   background-color: white;
   padding: 10px;
   border-radius: 10px;
+  transition: 0.4s;
+}
+.apps .conttainer .card:hover{
+  box-shadow: none;
 }
 .apps .conttainer .card h4 {
   color: var(--gray-color);
@@ -250,6 +255,77 @@ main {
 .apps .conttainer .card .logo {
   width: 100%;
   height: 90px;
+}
+.app_card{
+  background-color: rgba(90, 86, 86, 0.245);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+}
+.app_card .card{
+  background-color: white;
+  width: 300px;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+   box-shadow: 20px 20px 60px #bebebe,
+               -20px -20px 60px #ffffff;
+}
+.app_card .card .close_card{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 33px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+.app_card .card .content h1{
+color: var(--text-color);
+margin-bottom: 10px;
+font-size: 25px;
+}
+.app_card .card .content .options{
+  display: flex;
+  justify-content: center;
+flex-wrap: wrap;
+gap: 10px;
+}
+.app_card .card .content .options button{
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 20px;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.app_card .card .content .options button:hover{
+  background-color: #a53939;
+  color: white;
+}
+.app_card .card .content .card_button{
+  width: 100%;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.app_card .card .content input{
+  width: 100%;
+  background-color: white;
+  border: 1px  solid var(--main-color);
+  padding: 4px;
+  margin-top: 10px;
+  border-radius: 20px;
+
 }
 @media (max-width: 1300px) {
   .min_card {
@@ -263,11 +339,11 @@ main {
     height: 100px;
     width: 100px;
   }
-  header .container .nav span span{
-    display: none;
-}
   header .container .nav span{
     width: 50px;
     text-align: center;
   }
+    header .container .nav span span{
+    display: none;
+}
 }
