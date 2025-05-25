@@ -24,6 +24,21 @@
     "name": "clash of clans",
     "img": "https://th.bing.com/th/id/R.dfc64eee570c8c5f25f4135eaede3762?rik=rAOxUSCTHpGo2w&riu=http%3a%2f%2fcocland.com%2fwp-content%2fuploads%2f2015%2f04%2fClash-of-Clans-Logo.png&ehk=QQtl4Zfrfq7WFWljIi5IEqRKGPvFsFucCXyAEAM2W8M%3d&risl=&pid=ImgRaw&r=0",
     "link": "/app/alpha.html"
+},
+{
+    "name": "shahed",
+    "img": "https://www.broadcastprome.com/wp-content/uploads/2020/01/Shahid-Logo-1.png",
+    "link": "/app/alpha.html"
+},
+{
+    "name": "call of duty",
+    "img": "https://th.bing.com/th/id/R.2da42a0c1f6d4998b61afbe2236d20f1?rik=KqxYvWiiRm3YlA&pid=ImgRaw&r=0",
+    "link": "/app/alpha.html"
+},
+{
+    "name": "arena breakout",
+    "img": "https://th.bing.com/th/id/OIP.DHh5QjJ-KlvoINrYX5xZqQHaHa?cb=iwc2&rs=1&pid=ImgDetMain",
+    "link": "/app/alpha.html"
 }
 
 ]

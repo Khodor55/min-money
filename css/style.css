@@ -85,10 +85,11 @@ main {
   align-items: center;
   padding: 20px;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 10px;
   position: relative;
   box-shadow: 20px 20px 60px #bebebe,
                -20px -20px 60px #ffffff;
+              border: 10px solid rgba(162, 0, 0, 0.215);
 }
 .light_img{
   width: 80px;
@@ -103,12 +104,21 @@ main {
   padding: 3px 9px;
   color: var(--gray-color);
 }
+
 .min_card .card h1 span {
   color: var(--gray-color);
 }
-.min_card .card h1 p {
+.min_card .card h1 .p {
   font-size: 16px;
   color: var(--gray-color);
+}
+.min_card .card h1 i{
+  margin-left: 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.money_number.active{
+  filter: blur(8px);
 }
 .viza {
   font-size: 42px;

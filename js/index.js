@@ -40,14 +40,19 @@ let pubg_card = `
   </div>
 `;
 
-let tempDiv = document.createElement('div');
-tempDiv.innerHTML = pubg_card;
-document.body.appendChild(tempDiv);
+// let tempDiv = document.createElement('div');
+// tempDiv.innerHTML = pubg_card;
+// document.body.appendChild(tempDiv);
 
-// بعد الإضافة، نقدر نختار العناصر
-let close_card = document.querySelector('.close_card');
-let app_card = document.querySelector('.app_card');
+// // بعد الإضافة، نقدر نختار العناصر
+// let close_card = document.querySelector('.close_card');
+// let app_card = document.querySelector('.app_card');
 
-close_card.addEventListener("click", function () {
-  app_card.style.display = 'none';
-});
+// close_card.addEventListener("click", function () {
+//   app_card.style.display = 'none';
+// });
+
+let money_number = document.querySelector('.money_number');
+function showMoney(){
+money_number.classList.toggle('active')
+}
