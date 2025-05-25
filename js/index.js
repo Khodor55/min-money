@@ -56,3 +56,9 @@ let money_number = document.querySelector('.money_number');
 function showMoney(){
 money_number.classList.toggle('active')
 }
+let attention = document.querySelector('.attention');
+
+function closeAttention() {
+  
+    attention.remove();
+  }

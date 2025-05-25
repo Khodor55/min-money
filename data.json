@@ -39,6 +39,16 @@
     "name": "arena breakout",
     "img": "https://th.bing.com/th/id/OIP.DHh5QjJ-KlvoINrYX5xZqQHaHa?cb=iwc2&rs=1&pid=ImgDetMain",
     "link": "/app/alpha.html"
+},
+{
+    "name": "netflix",
+    "img": "https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo.png",
+    "link": "/app/alpha.html"
+},
+{
+    "name": "netflix",
+    "img": "https://logos-world.net/wp-content/uploads/2020/04/TikTok-Logo-2018-present.jpg",
+    "link": "/app/alpha.html"
 }
 
 ]
