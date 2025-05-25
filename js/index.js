@@ -5,12 +5,12 @@ fetch('data.json')
     for (let i = 0; i < data.length; i++) {
       conttainer.innerHTML += `
         <div class="card">
-          <a href="${data[i].link}">
+         
             <div class="logo">
               <img src="${data[i].img}" alt="">
             </div>
             <div class="content"><h4>${data[i].name}</h4></div>
-          </a>
+     
         </div>
       `;
     }

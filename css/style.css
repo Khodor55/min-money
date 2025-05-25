@@ -87,7 +87,14 @@ main {
   justify-content: center;
   border-radius: 20px;
   position: relative;
-  box-shadow: var(--box-shadow);
+  box-shadow: 20px 20px 60px #bebebe,
+               -20px -20px 60px #ffffff;
+}
+.light_img{
+  width: 80px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 .min_card .card .tilte {
   position: absolute;
